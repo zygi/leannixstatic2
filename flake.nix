@@ -18,8 +18,8 @@
           # For `staticLibDeps`, each derivation should contain a static library
           # in `${deriv}/lib${static.name}.a`. 
           staticLibDeps = [ lean-nix-static-1.packages.${system}.staticLib ];
-          # For `pluginDeps`, each derivation should contain a static library in
-          # `${deriv}/lib${static.name}.a`. 
+          # For `pluginDeps`, each derivation should contain a plugin in
+          # `${deriv}/lib/lib${plugin.name}.so`. 
           pluginDeps = [ lean-nix-static-1.packages.${system}.plugin ];
         };
       in {
